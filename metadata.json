@@ -1,0 +1,7 @@
+{
+  "name": "Dash Board",
+  "description": "Pop up with controls and application launchers",
+  "uuid": "dash-board@aylur",
+  "version": 1,
+  "shell-version": [ "42" ]
+}

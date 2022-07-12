@@ -1,0 +1,96 @@
+.db-main-box{
+    spacing: 12px;
+}
+.db-box{
+    background-color: #282828;
+    border-color: #303030;
+}
+.db-container{ spacing: 10px; }
+.db-widget{
+    background-color: #303030;
+    border: 1px solid #343434;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 6px;
+    spacing: 6px;
+}
+
+/* buttons */
+.db-btn{ border-radius: 10px; }
+.db-btn:hover, .db-btn:focus{ background-color: #3e3e3e; }
+.db-btn:active{ background-color: #474747; }
+
+/* welcomeBox */
+.db-user-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+}
+.db-user-box{ 
+    background-color: #3e3e3e;
+    border-radius: 12px;
+    padding: 6px;
+    spacing: 6px;
+}
+/* sliderBox */
+.db-slider StIcon{ icon-size: 24px; margin-right: 8px; }
+.db-slider { font-size: 0; } /* for power percentage label */
+.db-power-slider .slider{ -slider-handle-radius: 0; -barlevel-active-border-color: #8ff0a4; -barlevel-active-background-color: #8ff0a4;}
+.db-power-slider:red .slider{     -barlevel-active-border-color: #f66151; -barlevel-active-background-color: #f66151;}
+.db-power-slider:orange .slider{  -barlevel-active-border-color: #ffbe6f; -barlevel-active-background-color: #ffbe6f;}
+.db-power-slider:yellow .slider{  -barlevel-active-border-color: #f9f06b; -barlevel-active-background-color: #f9f06b;}
+.db-brightness-slider .slider{ color: #3584e4; -barlevel-active-border-color: #ffffff; -barlevel-active-background-color: #ffffff;}
+.db-slider-box{ width: 220px; }
+
+/* mediaBox */
+.db-media-box{ width: 520px;}
+.db-media-cover{
+    width:  200px;
+    height: 200px;
+    background-color: #343434;
+    border-radius: 12px;
+}
+.db-media-icon{
+    icon-size: 1.4em;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+}
+.db-player-icon{ icon-size: 2em; }
+.db-media-icon:active{ color: white; }
+.db-media-right-box{ padding: 8px; font-size: 1.2em;}
+
+/* app-box */
+.db-app-box{
+    width:  220px;
+    height: 220px;
+}
+.db-app-btn StIcon{ icon-size: 48px; }
+
+/* link-box */
+.db-link-btn{ icon-size: 3.8em; }
+
+/* shell-box */
+.db-shell-box StIcon{ icon-size: 58px; }
+
+/* clock-box */
+.db-clock-btn{
+    font-size: 2.2em;
+    font-weight: 900;
+}
+.db-date, .db-day{font-size: 1em;}
+
+/* controls-box */
+.db-controls{ icon-size: 44px; margin: 6px;}
+
+/* dir-box */
+.db-dir-icon{ icon-size: 1em; margin: 0 0.4em;}
+.db-dir-btn{ padding: 2px; border-radius: 8px;}
+.db-dir-box{ spacing: 2px; }
+
+/* links */
+/* .db-reddit{ background-color: orangered; } */
+/* .db-youtube{ background-color: red; } */
+/* .db-github{ background-color: #132532; } */
+/* .db-canvas{ background-color: #a42b27; } */
+/* .db-gmail{ background-color: #ad4237; } */
+/* .db-ncore{ background-color: #436608; } */
