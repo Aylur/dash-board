@@ -29,7 +29,7 @@ var WelcomeBox = GObject.registerClass(
 class WelcomeBox extends St.BoxLayout{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-container db-welcomeBox',
+            style_class: 'popup-menu-content db-widget db-container db-welcomeBox',
             vertical: true,
         });
 
@@ -222,7 +222,7 @@ var SliderBox = GObject.registerClass(
 class SliderBox extends St.BoxLayout{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-slider-box',
+            style_class: 'popup-menu-content db-widget db-slider-box',
             y_expand: true,
             vertical: true,
         });
@@ -249,10 +249,10 @@ class ControlsBox extends St.BoxLayout{
             vertical: true,
         });
 
-        this.settings = new Button({ style_class: 'db-btn popup-menu-content', label: '漣',  x_expand: true, });
-        this.logOut = new Button({ style_class: 'db-btn popup-menu-content', label: '﫼',    x_expand: true, });
-        this.wifi = new Button({ style_class: 'db-btn popup-menu-content', label: '直',      x_expand: true, });
-        this.shutdown = new Button({ style_class: 'db-btn popup-menu-content', label: '',  x_expand: true, });
+        this.settings = new Button({ style_class: 'db-btn popup-menu-content db-widget', label: '漣',  x_expand: true, });
+        this.logOut = new Button({ style_class: 'db-btn popup-menu-content db-widget', label: '﫼',    x_expand: true, });
+        this.wifi = new Button({ style_class: 'db-btn popup-menu-content db-widget', label: '直',      x_expand: true, });
+        this.shutdown = new Button({ style_class: 'db-btn popup-menu-content db-widget', label: '',  x_expand: true, });
 
         this.settings.set_child(new St.Icon({ icon_name: 'org.gnome.Settings-symbolic', style_class: 'db-controls'}));
         this.logOut.set_child(new St.Icon({ icon_name: 'system-log-out-symbolic',       style_class: 'db-controls'}));
@@ -329,7 +329,7 @@ var DirectoryBox = GObject.registerClass(
 class DirectoryBox extends St.BoxLayout{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-container db-dir-box',
+            style_class: 'popup-menu-content db-widget db-container db-dir-box',
             y_expand: true,
             vertical: true,
         });
@@ -359,7 +359,7 @@ var MediaBox = GObject.registerClass(
 class MediaBox extends St.Bin{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-media-box',
+            style_class: 'popup-menu-content db-widget db-media-box',
             y_expand: true,
         });
         this.media = new MediaPlayer.Media();
@@ -385,7 +385,7 @@ var ClockBox = GObject.registerClass(
 class ClockBox extends St.BoxLayout{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-clockBox db-container',
+            style_class: 'popup-menu-content db-widget db-clockBox db-container',
         });
         this.clock = new Button({
             style_class: 'db-clock-btn db-btn',
@@ -444,7 +444,7 @@ var AppBox = GObject.registerClass(
 class AppBox extends St.BoxLayout{
     _init(){
         super._init({
-            style_class: 'popup-menu-content db-app-box db-container',
+            style_class: 'popup-menu-content db-widget db-app-box db-container',
             vertical: true,
             y_expand: true,
             x_expand: true,
@@ -511,7 +511,7 @@ let LinkBtn = GObject.registerClass(
 class LinkBtn extends St.Button{
     _init(url, icon){
         super._init({
-            style_class: 'popup-menu-content db-btn '+'db-'+icon,
+            style_class: 'popup-menu-content db-widget db-btn '+'db-'+icon,
             can_focus: true,
             x_expand: true,
             y_expand: true, 
@@ -564,7 +564,7 @@ class ShellBox extends St.BoxLayout{
 
         this.searchBtn = new Button({
             x_expand: true,
-            style_class: 'popup-menu-content db-btn',
+            style_class: 'popup-menu-content db-widget db-btn',
             child: new St.Icon({
                 icon_name: 'system-search-symbolic',
             }),
@@ -574,7 +574,7 @@ class ShellBox extends St.BoxLayout{
 
         this.showAppsBtn = new Button({
             x_expand: true,
-            style_class: 'popup-menu-content db-btn',
+            style_class: 'popup-menu-content db-widget db-btn',
             child: new St.Icon({
                 icon_name: 'view-app-grid-symbolic',
             })
@@ -584,7 +584,7 @@ class ShellBox extends St.BoxLayout{
 
         this.incognitoBtn = new Button({
             x_expand: true,
-            style_class: 'popup-menu-content db-btn',
+            style_class: 'popup-menu-content db-widget db-btn',
             child: new St.Icon({
                 icon_name: 'view-private-symbolic',
             }),
